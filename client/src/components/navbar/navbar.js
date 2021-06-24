@@ -1,9 +1,10 @@
 import React from 'react'
+import "./navbar.css"
 
-export default function navbar() {
+function navbar() {
     return (
-        <div>
-            
-        </div>
+        <nav class="navbar" role="navigation" aria-label="main navigation">khb</nav>
     )
 }
+
+export default navbar;

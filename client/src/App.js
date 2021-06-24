@@ -1,17 +1,18 @@
 import React from 'react';
-import Header from "./components/header/header";
-import Navbar from "./components/navbar/navbar";
-import Results from "./components/results/results";
-import Searchbar from "./components/searchbar/searchbar";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./pages/homepage";
+import Saved from "./pages/saved"
 
 function App() {
   return (
+    <Router>
     <div>
-      <Navbar/>
-      <Header/>
-      <Searchbar/>
-      <Results/>
+    <Switch>
+    <Route exact path="/" component={Home} />
+    <Route exact path="/saved" component={Saved} />
+      </Switch>
     </div>
+    </Router>
   );
 }
 
