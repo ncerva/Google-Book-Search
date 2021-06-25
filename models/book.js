@@ -1,5 +1,6 @@
 //title authors description image link
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 const bookschema = new Schema ({
     title: {
@@ -25,4 +26,6 @@ const bookschema = new Schema ({
     },
 })
 
-module.exports = mongoose.model('bookschema', GoogleBooks)
+const Book = mongoose.model("Book", bookSchema);
+
+module.exports = Book;
