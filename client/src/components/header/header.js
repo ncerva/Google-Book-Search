@@ -3,8 +3,8 @@ import "./header.css"
 
 export default function header() {
     return (
-        <div>
-            
+        <div className="header">
+            <div className="wrapper">React Google Books Search</div>
         </div>
     )
 }
